@@ -6,7 +6,7 @@ BPF, as in _Berkeley Packet Filter_, is an in-kernel virtual machine running pro
 
 Recently, [Cilium](https://cilium.io) launched a great website about eBPF called [ebpf.io](https://ebpf.io/). It serves a similar purpose to this list, with [an introduction to eBPF](https://ebpf.io/what-is-ebpf) and links to [related projects](https://ebpf.io/projects).
 
-> Note: eBPF is an exciting piece of technology, and its ecosystem is constantly evolving. We'd love help from _you_ to keep this awesome list up to date, and improve its signal-to-noise ratio in anyway we can. Please feel free to leave [any feedback](https://github.com/zoidbergwill/awesome-ebpf/issues).
+> Note: eBPF is an exciting piece of technology, and its ecosystem is constantly evolving. We'd love help from _you_ to keep this awesome list up to date, and improve its signal-to-noise ratio in anyway we can. Please feel free to leave [any feedback](../../issues).
 
 ## Contents
 
@@ -425,7 +425,7 @@ If you are new to eBPF, you may want to try the links described as "introduction
 
 ## Acknowledgement
 
-Thank you to Quentin Monnet and Daniel Borkmann for their original work on [Dive into BPF: A List of Reading Material](https://qmonnet.github.io/whirl-offload/2016/09/01/dive-into-bpf/) which became the basis for this list.
+Thank you to Quentin Monnet and Daniel Borkmann for their original work on [Dive into BPF: A List of Reading Material](https://qmonnet.github.io/whirl-offload/2016/09/01/dive-into-bpf/) which became the basis for this list. Thanks to [@zoidyzoidzoid](https://github.com/zoidyzoidzoid/) for creating this document.
 
 ## Contributing
 
@@ -435,4 +435,4 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](http://creativecommons.org/publicdomain/zero/1.0)
 
-To the extent possible under law, zoidbergwill has waived all copyright and related or neighboring rights to this work.
+To the extent possible under law, the authors have waived all copyright and related or neighboring rights to this work.
