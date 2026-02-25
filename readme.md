@@ -2,9 +2,9 @@
 
 > A curated list of awesome projects related to eBPF.
 
-BPF, as in _Berkeley Packet Filter_, is an in-kernel virtual machine running programs passed from user space. Initially implemented on BSD, then Linux, the (now legacy) "classic BPF" or cBPF machine would be used with tools like tcpdump for filtering packets in the kernel to avoid useless copies to user space. More recently, the BPF infrastructure in Linux has been completely reworked and gave life to the "extended BPF", or eBPF, which gained new features (safety and termination checks, JIT-compiling for programs, persistent maps, a standard library, hardware offload support, etc.) and is now used for many tasks. Processing packets at a very low level (XDP), tracing and monitoring events on the system, or enforcing access control over cgroups are but a few examples to which eBPF brings performance, programmability and flexibility.
+BPF, as in _Berkeley Packet Filter_, is an in-kernel virtual machine running programs passed from user space. Initially implemented on BSD, then Linux, the (now legacy) "classic BPF" or cBPF machine would be used with tools like tcpdump for filtering packets in the kernel to avoid useless copies to user space. The BPF infrastructure in Linux was completely reworked and gave life to eBPF, which gained new features (safety and termination checks, JIT-compiling for programs, persistent maps, a standard library, hardware offload support, etc.) and is now used for many tasks. Processing packets at a very low level (XDP), tracing and monitoring events on the system, or enforcing access control over cgroups are but a few examples to which eBPF brings performance, programmability and flexibility.
 
-Recently, [Cilium](https://cilium.io) launched a great website about eBPF called [ebpf.io](https://ebpf.io/). It serves a similar purpose to this list, with [an introduction to eBPF](https://ebpf.io/what-is-ebpf) and links to [related projects](https://ebpf.io/projects).
+[Cilium](https://cilium.io) has a great website about eBPF called [ebpf.io](https://ebpf.io/). It serves a similar purpose to this list, with [an introduction to eBPF](https://ebpf.io/what-is-ebpf) and links to [related projects](https://ebpf.io/projects).
 
 > Note: eBPF is an exciting piece of technology, and its ecosystem is constantly evolving. We'd love help from _you_ to keep this awesome list up to date, and improve its signal-to-noise ratio in anyway we can. Please feel free to leave [any feedback](../../issues).
 
@@ -28,6 +28,7 @@ Recently, [Cilium](https://cilium.io) launched a great website about eBPF called
 
 - [ebpf.io](https://ebpf.io/) - A gateway to discover all the basics of eBPF, including a listing of the main related projects and of community resources.
 - [Cilium's BPF and XDP Reference Guide](http://docs.cilium.io/en/latest/bpf/) - In-depth documentation about most features and aspects of eBPF.
+- [docs.ebpf.io](https://docs.ebpf.io/) - Providing technical documentation for eBPF.
 
 ### Kernel Documentation
 
@@ -44,7 +45,7 @@ Recently, [Cilium](https://cilium.io) launched a great website about eBPF called
 
 ### Other
 
-- [IO Visor's Unofficial eBPF spec](https://github.com/iovisor/bpf-docs/blob/master/eBPF.md) - Summary of eBPF syntax and operation codes.
+- [RFC 9669 BPF Instruction Set Architecture](https://www.rfc-editor.org/rfc/rfc9669.html) - IETF specification for eBPF
 - [Jesper Dangaard Brouer's documentation](https://prototype-kernel.readthedocs.io/en/latest/bpf/index.html) - Work in progress, contributions welcome.
 - Emails from David Miller to the [xdp-newbies](http://vger.kernel.org/vger-lists.html#xdp-newbies) mailing list:
 
@@ -89,6 +90,7 @@ If you are new to eBPF, you may want to try the links described as "introduction
 - [Cloudflare's blog posts on eBPF](https://blog.cloudflare.com/tag/ebpf/) - Different blog posts about networking use cases and low-level aspects of eBPF.
 - [Linux Extended BPF (eBPF) Tracing Tools](https://www.brendangregg.com/ebpf.html) - An in-depth collection of information around examples of performance analysis tools using eBPF. Contains also a section at the end of the page about other resources.
 - [Beginner's guide to eBPF](https://github.com/lizrice/ebpf-beginners) - A set of live-coding talks and the accompanying code examples, introducing eBPF programming using a variety of libraries and program types.
+- [ebpf.io blog](https://ebpf.io/blog/) - Links to many community blogs posts.
 
 ### BPF Internals
 
@@ -100,7 +102,6 @@ If you are new to eBPF, you may want to try the links described as "introduction
   - [On getting tc classifier fully programmable with cls_bpf](http://www.netdevconf.org/1.1/proceedings/slides/borkmann-tc-classifier-cls-bpf.pdf) - Introduction to eBPF, including several features (map management, tail calls, verifier). The full paper [is also available here](http://www.netdevconf.org/1.1/proceedings/papers/On-getting-tc-classifier-fully-programmable-with-cls-bpf.pdf).
   - [Linux tc and eBPF](https://archive.fosdem.org/2016/schedule/event/ebpf/attachments/slides/1159/export/events/attachments/ebpf/slides/1159/ebpf.pdf)
 
-- [IO Visor blog](https://www.iovisor.org/resources/blog)
 - [Linux Networking Explained](https://www.slideshare.net/slideshow/linux-networking-explained/65287988) - Linux networking internals, with a part about eBPF.
 
 ### Kernel Tracing
@@ -192,6 +193,7 @@ If you are new to eBPF, you may want to try the links described as "introduction
 - [Writing a basic continuous profiler](https://blog.maxgio.me/posts/unleashing-power-frame-pointers-writing-simple-continuous-profiler/) - A step-by-step guide to write an appliation continuous profiler leveraging the eBPF instrumentation, with a complete project as a reference.
 - [Inspektor Gadget - Hello world gadget](https://inspektor-gadget.io/docs/latest/gadget-devel/hello-world-gadget) - An introductory guide to writing image-based eBPF gadgets and sharing them via OCI registries.
 - [Inspektor Gadget - Hello world gadget with Wasm](https://inspektor-gadget.io/docs/latest/gadget-devel/hello-world-gadget-wasm) - An introductory guide to writing image-based eBPF gadgets and performing post-processing with WASM.
+- [ebpf.io labs](https://ebpf.io/labs/) - List of community developed labs.
 
 ## Examples
 
@@ -237,13 +239,11 @@ If you are new to eBPF, you may want to try the links described as "introduction
 
 - [cilium/ebpf](https://github.com/cilium/ebpf) - Pure-Go library to read, modify and load eBPF programs and attach them to various hooks in the Linux kernel.
 - [libbpfgo](https://github.com/aquasecurity/libbpfgo) - eBPF library for Go, powered by libbpf.
-- [gobpf](https://github.com/iovisor/gobpf) - Go bindings for BCC for creating eBPF programs.
 
 ### Aya
 
 - [aya](https://github.com/aya-rs/aya) - A pure Rust library for writing, loading, and managing eBPF objects, with a focus on developer experience and operability. It supports writing eBPF programs in Rust and distributing library code over crates.io to share it between eBPF programs. Aya does not depend on libbpf.
 - [aya-template](https://github.com/aya-rs/aya-template) - Templates for writing BPF applications in Aya that can be used with [`cargo generate`](https://github.com/cargo-generate/cargo-generate).
-- [Ebpfguard](https://github.com/deepfence/ebpfguard) - Rust library for writing Linux security policies using eBPF.
 
 ### zbpf
 
@@ -252,10 +252,6 @@ If you are new to eBPF, you may want to try the links described as "introduction
 ### eunomia-bpf
 
 - [eunomia-bpf](https://github.com/eunomia-bpf/eunomia-bpf) - A compilation framework and runtime library to build, distribute, dynamically load, and run CO-RE eBPF applications in multiple languages and WebAssembly. It supports writing eBPF kernel code only (to build simple CO-RE libbpf eBPF applications), writing the kernel part in both BCC and libbpf styles, and writing userspace in multiple languages in a WASM module and distributing it with simple JSON data or WASM OCI images. The runtime is based on libbpf only and provides CO-RE to BCC-style eBPF programs without depending on the LLVM library.
-
-### oxidebpf
-
-- [oxidebpf](https://github.com/redcanaryco/oxidebpf) - A pure Rust library for managing eBPF programs, designed for security use cases. The featureset is more limited than other libraries but emphasizes stability across a wide range of kernels and backwards-compatible compile-once-run-most-places.
 
 ### bpftool and Other Tools from the Kernel Tree
 
@@ -272,7 +268,6 @@ If you are new to eBPF, you may want to try the links described as "introduction
 - [A generic implementation](https://github.com/YutaroHayakawa/generic-ebpf) - With support for FreeBSD kernel, FreeBSD user space, Linux kernel, Linux user space and macOS user space. Used for the [VALE software switch](https://www.unix.com/man-page/freebsd/4/vale/)'s [BPF extension module](https://github.com/YutaroHayakawa/vale-bpf).
 - [rbpf](https://github.com/qmonnet/rbpf) - Written in Rust. Interpreter for Linux, macOS and Windows, and JIT-compiler for x86_64 under Linux.
 - [PREVAIL](https://github.com/vbpf/ebpf-verifier) - A user space verifier for eBPF [using an abstract interpretation layer](https://elazarg.github.io/pldi19main-final.pdf), with support for loops.
-- [oster](https://github.com/grantseltzer/oster) - Written in Go. A tool for tracing execution of Go programs by attaching eBPF to uprobes.
 - [wachy](https://rubrikinc.github.io/wachy/) - A tracing profiler that aims to make eBPF uprobe-based debugging easier to use. This is done by displaying traces in a UI next to the source code and allowing interactive drilldown analysis.
 
 ### eBPF on Other Platforms
@@ -292,7 +287,7 @@ If you are new to eBPF, you may want to try the links described as "introduction
   - [OvS Orbit episode (#11), called P4 on the Edge](https://ovsorbit.org/#e11) - Related to the former item. Audio interview of John Fastabend by Ben Pfaff, one of the core maintainers of Open vSwitch.
   - [P4_16 backend for eBPF](https://github.com/p4lang/p4c/blob/master/backends/ebpf/README.md)
 
-- [Cilium](https://cilium.io/) project ([GitHub repository](https://github.com/cilium/cilium)) is a technology relying on BPF and XDP to provide "fast in-kernel networking and security policy enforcement for containers based on eBPF programs generated on the fly". Many presentations available (with overlap):
+- [Cilium](https://cilium.io/) project ([GitHub repository](https://github.com/cilium/cilium)) is a technology relying on eBPF and XDP to provide "fast in-kernel networking and security policy enforcement for containers based on eBPF programs generated on the fly". Many presentations available (with overlap):
 
   - [Cilium: Networking & Security for Containers with BPF & XDP](https://www.slideshare.net/slideshow/clium-container-networking-with-bpf-xdp/68194576) - Also featuring a load balancer use case
   - [Cilium: Networking & Security for Containers with BPF & XDP](https://www.slideshare.net/slideshow/cilium-bpf-xdp-for-containers-66969823/66969823) - [video](https://www.youtube.com/watch?v=TnJF7ht3ZYc&list=PLkA60AVN3hh8oPas3cq2VA9xB7WazcIgs)
@@ -301,11 +296,6 @@ If you are new to eBPF, you may want to try the links described as "introduction
   - [OvS Orbit episode (#4)](https://ovsorbit.benpfaff.org/) - Interview of Thomas Graf by Ben Pfaff.
   - [A generic introduction to Cilium](https://opensource.googleblog.com/2016/11/cilium-networking-and-security.html)
   - [A podcast interviewing Thomas Graf](https://blog.ipspace.net/2016/10/fast-linux-packet-forwarding-with/) - Ivan Pepelnjak interviewing Thomas, October 2016, on eBPF, P4, XDP and Cilium.
-
-- Open vSwitch (OvS), and its related project Open Virtual Network (OVN, an open source network virtualization solution) are considering using eBPF at various level:
-
-  - [Offloading OVS Flow Processing using eBPF](http://openvswitch.org/support/ovscon2016/7/1120-tu.pdf)
-  - [Coupling the Flexibility of OVN with the Efficiency of IOVisor](http://openvswitch.org/support/ovscon2016/7/1245-bertrone.pdf)
 
 - [Katran](https://code.fb.com/open-source/open-sourcing-katran-a-scalable-network-load-balancer/) - A layer 4 load-balancer based on XDP, open-sourced by Facebook.
 - [XDP in practice: integrating XDP in our DDoS mitigation pipeline](http://netdevconf.org/2.1/session.html?bertin) - Protection against DDoS with XDP at Cloudflare.
@@ -414,7 +404,6 @@ If you are new to eBPF, you may want to try the links described as "introduction
 - [Kernel documentation](https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/tree/Documentation/bpf/bpf_devel_QA.rst) - About contributions to BPF.
 - [The netdev mailing list](http://lists.openwall.net/netdev/) - Mailing list for Linux kernel networking stack development. All patches are sent there for review and inclusion.
 - [XDP-newbies](http://vger.kernel.org/vger-lists.html#xdp-newbies) - A mailing list specially dedicated to XDP programming (both for architecture or for asking for help).
-- [IO Visor mailing list](http://lists.iovisor.org/pipermail/iovisor-dev/) - BPF is at the heart of the project, and is regularly discussed on the mailing list.
 - [The XDP Collaboration Project](https://github.com/xdp-project/xdp-project) - A GitHub repository with notes and ideas regarding the future evolutions of XDP.
 
 ## Other Lists of Resources on eBPF
