@@ -6,7 +6,7 @@ BPF, as in _Berkeley Packet Filter_, is an in-kernel virtual machine running pro
 
 [Cilium](https://cilium.io) has a great website about eBPF called [ebpf.io](https://ebpf.io/). It serves a similar purpose to this list, with [an introduction to eBPF](https://ebpf.io/what-is-ebpf) and links to [related projects](https://ebpf.io/projects).
 
-> Note: eBPF is an exciting piece of technology, and its ecosystem is constantly evolving. We'd love help from _you_ to keep this awesome list up to date, and improve its signal-to-noise ratio in anyway we can. Please feel free to leave [any feedback](../../issues).
+> Note: eBPF is an exciting piece of technology, and its ecosystem is constantly evolving. We'd love help from _you_ to keep this awesome list up to date, and improve its signal-to-noise ratio in anyway we can. Please feel free to leave [any feedback](https://github.com/qmonnet/awesome-ebpf/issues).
 
 ## Contents
 
