@@ -336,6 +336,7 @@ If you are new to eBPF, you may want to try the links described as "introduction
 
 ### Security
 
+- [owLSM](https://github.com/Cybereason-Public/owLSM) - An eBPF LSM agent that implements a stateful Sigma rules engine focused on real time prevention.
 - [Falco](https://falco.org/) - A cloud-native runtime security project used as a Kubernetes threat detection engine.
 - [Sysmon for Linux](https://github.com/Sysinternals/SysmonForLinux) - A security monitoring tool. It depends on [SysinternalsEBPF](https://github.com/Sysinternals/SysinternalsEBPF).
 - [Red Canary Linux Agent](https://redcanary.com/blog/ebpf-for-security) - Red Canary has started to incorporate eBPF to their Linux security sensor.
