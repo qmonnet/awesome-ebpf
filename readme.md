@@ -8,6 +8,7 @@ BPF, as in _Berkeley Packet Filter_, is an in-kernel virtual machine running pro
 
 > Note: eBPF is an exciting piece of technology, and its ecosystem is constantly evolving. We'd love help from _you_ to keep this awesome list up to date, and improve its signal-to-noise ratio in anyway we can. Please feel free to leave [any feedback](https://github.com/qmonnet/awesome-ebpf/issues).
 
+- [guardian-agent-prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 production-tested AI agent system prompts for eBPF observability workflow orchestration, automated kernel tracing pipeline management, and multi-agent coordination. MIT licensed.
 ## Contents
 
 - [Reference Documentation](#reference-documentation)
