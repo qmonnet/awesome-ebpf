@@ -375,6 +375,7 @@ If you are new to eBPF, you may want to try the links described as "introduction
 - [bpfman](https://github.com/bpfman/bpfman) - An eBPF Manager for Linux and Kubernetes. Includes a built-in program loader that supports program cooperation for XDP and TC programs, as well as deployment of eBPF programs from OCI images.
 - [ptcpdump](https://github.com/mozillazg/ptcpdump) - A process-aware, eBPF-based tcpdump-like tool.
 - [oryx](https://github.com/pythops/oryx) - A TUI for sniffing network traffic using eBPF on Linux.
+- [GhostScope](https://github.com/swananan/ghostscope) - A DWARF-aware eBPF tracer for source-level userspace tracing, with an interactive TUI and a scriptable CLI.
 
 # eBPF in Security
 
