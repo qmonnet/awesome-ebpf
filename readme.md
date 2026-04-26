@@ -337,6 +337,7 @@ If you are new to eBPF, you may want to try the links described as "introduction
 
 ### Security
 
+- [ChronosynD](https://github.com/ChronosynD/core) - A behavioral HIDS for Linux that uses eBPF (`raw_syscalls/sys_enter` via Aya) to fit per-process statistical baselines and score live drift. Its research contribution, Sediment, is a poisoning-resistant baseline estimator that stays robust when the learning window is partially adversarial.
 - [Falco](https://falco.org/) - A cloud-native runtime security project used as a Kubernetes threat detection engine.
 - [Sysmon for Linux](https://github.com/Sysinternals/SysmonForLinux) - A security monitoring tool. It depends on [SysinternalsEBPF](https://github.com/Sysinternals/SysinternalsEBPF).
 - [Red Canary Linux Agent](https://redcanary.com/blog/ebpf-for-security) - Red Canary has started to incorporate eBPF to their Linux security sensor.
