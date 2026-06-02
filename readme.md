@@ -377,6 +377,8 @@ If you are new to eBPF, you may want to try the links described as "introduction
 - [ptcpdump](https://github.com/mozillazg/ptcpdump) - A process-aware, eBPF-based tcpdump-like tool.
 - [oryx](https://github.com/pythops/oryx) - A TUI for sniffing network traffic using eBPF on Linux.
 - [GhostScope](https://github.com/swananan/ghostscope) - A DWARF-aware eBPF tracer for source-level userspace tracing, with an interactive TUI and a scriptable CLI.
+- [AgentSight](https://github.com/eunomia-bpf/AgentSight) - Zero-instrumentation eBPF observability for LLM and coding agents, capturing syscall-level traces (file, network, process) without modifying the agent.
+- [ActPlane](https://github.com/eunomia-bpf/ActPlane) - OS-level agent harness that compiles a policy DSL to an in-kernel eBPF engine for labeled information-flow control at the syscall boundary, enforcing constraints across any tool or subprocess.
 
 # eBPF in Security
 
