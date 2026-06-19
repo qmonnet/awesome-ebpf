@@ -278,6 +278,7 @@ If you are new to eBPF, you may want to try the links described as "introduction
 ### Testing in Virtual Environments
 
 - [bcc in a Docker container](https://github.com/zlim/bcc-docker)
+- [bpfcompat](https://github.com/Kernel-Guard/bpfcompat) - Boots real Linux kernels in disposable QEMU/KVM VMs to load- and attach-validate compiled eBPF objects across a multi-distro, multi-architecture kernel matrix, classifying failures (missing BTF, unsupported map/program type, CO-RE relocations); runs as a CI gate and GitHub Action.
 
 ## Projects Related to eBPF
 
