@@ -336,6 +336,7 @@ If you are new to eBPF, you may want to try the links described as "introduction
 - [Coroot](https://github.com/coroot/coroot) - Coroot is an open-source APM and observability tool, a DataDog and NewRelic alternative.
 - [kyanos](https://github.com/hengyoush/kyanos) - Kyanos is an eBPF-based network issue analysis tool that enables you to capture network requests, such as HTTP, Redis, and MySQL requests.
 - [eTraceGen](https://github.com/bhanuprakasheagala/eTraceGen-eBPFEventTelemetryEngine) - eTraceGen is a Linux telemetry engine built with eBPF and Modern C++ that captures kernel-level events for processes, files, system calls, and network with a modular pipeline for decoding, enrichment, filtering, and JSON output.
+- [Beeward](https://github.com/ca110us/beeward) - eBPF agent for Kubernetes that attributes NFS/EFS reads and writes to the pod that issued them and exports them as Prometheus metrics, so the pod saturating a shared volume can be identified. Also includes an XDP per-IP rate limiter.
 
 ### Security
 
