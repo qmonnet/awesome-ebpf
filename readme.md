@@ -352,6 +352,7 @@ If you are new to eBPF, you may want to try the links described as "introduction
 - [Bombini](https://github.com/bombinisecurity/bombini) - An eBPF-based security agent written entirely in Rust using the [Aya](https://github.com/aya-rs/aya) library and built on LSM (Linux Security Module) BPF hooks.
 - [owLSM](https://github.com/Cybereason-Public/owLSM) - Open source agent that implements a stateful Sigma rules engine focused on monitoring and prevention using eBPF LSM.
 - [Inner Warden](https://github.com/InnerWarden/innerwarden) - A self-defending security agent for Linux and macOS that uses eBPF with 22 kernel hooks (tracepoints, kprobes, LSM, XDP) via the Aya library for real-time threat detection, automated response, and AI-powered triage.
+- [Rustinel](https://github.com/Karib0u/rustinel) - Open-source endpoint detection engine using eBPF on Linux and ETW on Windows, with Sigma, YARA, and IOC detections.
 
 ### Linux Scheduler
 
@@ -391,7 +392,6 @@ If you are new to eBPF, you may want to try the links described as "introduction
 - [ebpfkit-monitor](https://github.com/Gui774ume/ebpfkit-monitor) - An utility to statically analyze eBPF bytecode or monitor suspicious eBPF activity at runtime. It was specifically designed to detect ebpfkit.
 - [Bad BPF](https://github.com/pathtofile/bad-bpf) - A collection of malicious eBPF programs that make use of eBPF's ability to read and write user data in between the usermode program and the kernel.
 - [TripleCross](https://github.com/h3xduck/TripleCross) - A Linux eBPF rootkit with a backdoor, C2, library injection, execution hijacking, persistence and stealth capabilities.
-- [Rustinel](https://github.com/Karib0u/rustinel) - Open-source endpoint detection engine using eBPF on Linux and ETW on Windows, with Sigma, YARA, and IOC detections.
 
 ## The Code
 
