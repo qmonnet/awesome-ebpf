@@ -318,6 +318,8 @@ If you are new to eBPF, you may want to try the links described as "introduction
 - [PcapPlusPlus](https://pcapplusplus.github.io/) - An open-source C++ library for capturing, parsing and crafting network packets. It features a C++ interface for creating AF_XDP sockets, making it easy to [send and receive packets through them](https://pcapplusplus.github.io/docs/next/features#af_xdp-support-beta).
 - [ApFree WiFiDog](https://github.com/liudf0716/apfree-wifidog) - A high performance and lightweight captive portal solution for wireless networks. It leverages eBPF for traffic control and deep packet inspection capabilities, with plans to gradually replace nftables firewall functionality with eBPF-based solutions.
 - [ipx_wrap](https://github.com/twisted-pear/ipx_wrap) - A proof-of-concept IPX implementation for Linux using eBPF. 
+- [Sarena](https://github.com/erwin-kok/sarena) - An experimental eBPF-based network dataplane, control plane, and CNI implementation written in Rust using Aya.
+- [Gladia](https://github.com/sarena-rs/gladia-ebpf) - An eBPF testing framework for TCX/XDP programs that uses eBPF programs to test other eBPF programs directly in the kernel. Written in Rust using Aya
 
 ### Observability
 
