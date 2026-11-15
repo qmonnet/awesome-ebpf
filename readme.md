@@ -337,6 +337,7 @@ If you are new to eBPF, you may want to try the links described as "introduction
 - [kyanos](https://github.com/hengyoush/kyanos) - Kyanos is an eBPF-based network issue analysis tool that enables you to capture network requests, such as HTTP, Redis, and MySQL requests.
 - [eTraceGen](https://github.com/bhanuprakasheagala/eTraceGen-eBPFEventTelemetryEngine) - eTraceGen is a Linux telemetry engine built with eBPF and Modern C++ that captures kernel-level events for processes, files, system calls, and network with a modular pipeline for decoding, enrichment, filtering, and JSON output.
 - [sip-exporter](https://github.com/aibudaevv/sip-exporter) - Uses an eBPF socket filter with AF_PACKET on a privileged Linux host to select host-observed IPv4/UDP SIP and SDP-correlated RTP/RTCP, with export of Prometheus metrics, and Grafana dashboards.
+- [honeybeepf-llm](https://github.com/honeybee-studio/honeybeepf-llm) - Measures LLM API usage from the TLS traffic on each node with uprobes on TLS libraries, and exports token counts and cost per Kubernetes workload over OpenTelemetry. Written in Rust with Aya.
 
 ### Security
 
