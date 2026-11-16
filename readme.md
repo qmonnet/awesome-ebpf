@@ -384,6 +384,7 @@ If you are new to eBPF, you may want to try the links described as "introduction
 - [AgentSight](https://github.com/eunomia-bpf/AgentSight) - Zero-instrumentation eBPF observability for LLM and coding agents, capturing syscall-level traces (file, network, process) without modifying the agent.
 - [ActPlane](https://github.com/eunomia-bpf/ActPlane) - OS-level agent harness that compiles a policy DSL to an in-kernel eBPF engine for labeled information-flow control at the syscall boundary, enforcing constraints across any tool or subprocess.
 - [Keploy](https://keploy.io) - Open-source platform that uses eBPF to capture API and dependency traffic and replay it as tests and mocks in isolated sandboxes, with no code changes.
+- [eprobe](https://github.com/eprobe-dev/eprobe) - Zero-daemon Linux incident diagnostics CLI and TUI that loads signed or self-built CO-RE eBPF modules ([eprobe-modules](https://github.com/eprobe-dev/eprobe-modules)) to triage off-CPU/futex stalls, syscall latency, block I/O, HTTP/MySQL queries, and OpenSSL traffic without ptrace overhead.
 
 # eBPF in Security
 
