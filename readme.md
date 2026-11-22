@@ -355,6 +355,7 @@ If you are new to eBPF, you may want to try the links described as "introduction
 - [Inner Warden](https://github.com/InnerWarden/innerwarden) - A self-defending security agent for Linux and macOS that uses eBPF with 22 kernel hooks (tracepoints, kprobes, LSM, XDP) via the Aya library for real-time threat detection, automated response, and AI-powered triage.
 - [Rustinel](https://github.com/Karib0u/rustinel) - Open-source endpoint detection engine using eBPF on Linux and ETW on Windows, with Sigma, YARA, and IOC detections.
 - [kguardian](https://github.com/kguardian-dev/kguardian) - A Kubernetes tool leveraging eBPF for advanced Kubernetes security, auto-generating Network Policies, Seccomp profiles, and more.
+- [Snitch](https://github.com/aixisstudio/Snitch) - An open-source application firewall and network observer that monitors per-process outbound connections, applies Sigma rules, and uses eBPF for enforcement and kill-switch protection on Linux.
 
 ### Linux Scheduler
 
